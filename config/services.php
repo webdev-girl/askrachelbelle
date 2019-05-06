@@ -13,7 +13,11 @@ return [
     | to have a conventional place to find your various credentials.
     |
     */
-
+    // 'facebook' => [
+    //    'client_id' => '2259269221008965', //Facebook API
+    //    'client_secret' => '447f3da49b8511012c2652e98684a673', //Facebook Secret
+       // 'redirect' => 'http://laravel.localhost/login/facebook/callback',
+   // ],
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
