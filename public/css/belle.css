@@ -3,7 +3,7 @@ html, body {
     /* background:#f8f8f8; */
     background-color: black;
     color: #636b6f;
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
     font-family: "Ubuntu", sans-serif;
     font-weight: 200;
     font-size: 100%;
@@ -44,8 +44,9 @@ html, body {
         top: 18px;
     }
 
-    .content {
+    .welcome-first-image {
         text-align: center;
+        margin-top: 18px;
         padding: 0;
     }
 
@@ -113,9 +114,10 @@ Caption text
   animation-name: fade;
   animation-duration: 1.5s; }
 }
-.typing-sentence{
-    text-align: center;
-    margin-bottom: 20px;
+.strings{
+
+    padding: 0px 10px;
+    margin-right: 50px;
     font-weight: bold;
     color: white;
 
