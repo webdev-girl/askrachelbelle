@@ -60,13 +60,13 @@
            <span class="dot"></span>
            <span class="dot"></span>
         </div>
-        <div class="typing-sentence">
+        {{-- <div class="typing-sentence"> --}}
             <h1>Hello World!</h1>
-            <div id="typed-strings">
+            {{-- <div id="typed-strings">
                 <p>Welcome to<strong> Ask Rachel Belle</strong> Got a</p>
                 <p>question<em> that</em><p>needs answers?</p>
-            </div>
-            <span id="typed"></span>
+            </div> --}}
+            {{-- <span id="typed"></span> --}}
         </div>
         <div class="container welcome-intro">
             <div class="row">
@@ -88,6 +88,53 @@
                 </div>
             </div>
         </div>
+
+                <h2>Hey there!</h2>
+                <p>Got a question fill out the form below, and give it your best shot go ahead ask a queston!</p>
+
+                <div class="container">
+                  <form action="/action_page.php">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="fname">First Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Last Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="country">Email</label>
+                      </div>
+                      <div class="col-75">
+                        <select id="country" name="country">
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="subject">Subject</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <input type="submit" value="Submit">
+                    </div>
+                  </form>
+                </div>
         {{-- <div class="container-fluid welcome-intro">
             <div class="row">
                 <div class="col-sm" style="background-color:lavender;">

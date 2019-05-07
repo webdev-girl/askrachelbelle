@@ -17,7 +17,9 @@ Route::get('/', function () {
 Route::get('/marketing', function () {
     return view('marketing');
 });
-
+Route::get('/blog', function () {
+    return view('blog');
+});
 Route::get('/login/{social}','Auth\LoginController@socialLogin')->where('social','twitter|facebook|linkedin|google|github|bitbucket');
 Route::get('/login/{social}/callback','Auth\LoginController@handleProviderCallback')->where('social','twitter|facebook|linkedin|google|github|bitbucket');
 
