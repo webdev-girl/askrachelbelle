@@ -6,15 +6,9 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @auth
-        <meta name="api-token" content="{{ auth()->user()->api_token }}">
-   @endauth
-    <title>{{ config('app.name', 'Ask Rachel Belle') }}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous8/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/belle.css')}}">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+    <title>{{ config('app.Ask Rachel Belle', 'Ask Rachel Belle') }}</title>
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -25,12 +19,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="app">
+<body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('', 'Ask Rachel Belle') }}
+                    {{ config('app.Ask Rachel Belle', 'Ask Rachel Belle') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -82,27 +76,5 @@
             @yield('content')
         </main>
     </div>
-    {{-- <script src="{{ mix('/js/app.js') }}"></script>
-    <script>
-        window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '{your-app-id}',
-          cookie     : true,
-          xfbml      : true,
-          version    : '{api-version}'
-        });
-
-        FB.AppEvents.logPageView();
-
-  };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-   </script>
 </body>
-</html> --}}
+</html>

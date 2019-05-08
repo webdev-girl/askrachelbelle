@@ -15,34 +15,11 @@
                     @endif
 
                     You are logged in!
-                    
-                    <a class="home-question-link" href="/blog"><i class="far fa-edit"></i>Do you have a question?</a>
+                </br>
+                <a href="/blog">Ask a Question</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 @endsection
-
-{{-- <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{your-app-id}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{api-version}'
-    });
-
-    FB.AppEvents.logPageView();
-
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script> --}}

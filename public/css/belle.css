@@ -11,18 +11,21 @@ html, body {
     height: 100vh;
     margin: 0;
     }
+
     h1,h2 {
       font-size: 72px;
       background: -webkit-linear-gradient(#eee, #333);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
 .app{
     background-color: violet;
 }
     img.logo{
         margin: 18px 0px 0px 10px;
     }
+
 .title{
     font-size: 36px;
     color: white;
@@ -128,6 +131,7 @@ Caption text
     color: white;
 
 }
+
 .welcome-intro{
     margin-top: 20px;
 }
@@ -188,8 +192,9 @@ a{
  	font-size: 0.75em;
  }
  .testimonial{
-     width:40%;
-     float: right;
+     /* width:40%; */
+     /* float: right; */
+     display:block
  }
  * {
   box-sizing: border-box;
@@ -273,12 +278,18 @@ input[type=submit]:hover {
     margin-right: 20px;
 }
 @media only screen and (max-width: 768px) {
+    .testimonial{
+      display:none;
+    }
     }
 
 @media screen and (max-width: 600px) {
    .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+      }
+      .testimonial{
+        display:none;
       }
     }
 On smaller screens, decrease text size

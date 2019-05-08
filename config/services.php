@@ -13,11 +13,21 @@ return [
     | to have a conventional place to find your various credentials.
     |
     */
-    // 'facebook' => [
-    //    'client_id' => '2259269221008965', //Facebook API
-    //    'client_secret' => '447f3da49b8511012c2652e98684a673', //Facebook Secret
-       // 'redirect' => 'http://laravel.localhost/login/facebook/callback',
-   // ],
+  //   'facebook' => [
+  //      'client_id' => '2259269221008965', //Facebook API
+  //      'client_secret' => '447f3da49b8511012c2652e98684a673', //Facebook Secret
+  //      'redirect' => 'http://laravel.localhost/login/facebook/callback',
+  //  ],
+  //  'github' => [
+  //      'client_id' => 'af54e6bae9a4edfc6cbb',
+  //      'client_secret' => '95afc7b40e6aca6419a7623c34bb6d86cb2ac',
+  //      'redirect' => 'http://laravel.localhost/login/github/callback',
+  //   ],
+  // 'twitter' => [
+  //      'client_id' => '8JS1GvRflY5g9N3kZc0heYTqL',
+  //      'client_secret' => 'eYujptPLBAAzdHIz8hiqGgz4MkJTcmL1JAGEuEZsGU1MykjK',
+  //      'redirect' => 'http://laravel.localhost/login/twitter/callback',
+  //  ],
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),

@@ -1,22 +1,27 @@
 <?php
 namespace App\Models;
-use App\Concern\Likeable;
+
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-class Comment extends Model
-{
-    use Likeable;
+class Comment extends Model{
+
+     public function post(){
+        return $this->belongsTo('App\Post');
+    }
+
+    public function user()
+  {
+      return $this->belongsTo(User::class);
+  }
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-      'author_id',
-      'post_id',
-      'content',
-      'posted_at'
+      // 'post_id',
+      // 'posted_at'
     ];
     /**
      * The attributes that should be mutated to dates.
@@ -24,35 +29,7 @@ class Comment extends Model
      * @var array
      */
     protected $dates = [
-        'posted_at'
+        // 'posted_at'
     ];
-    /**
-     * Scope a query to only include comments posted last week.
-     */
-    public function scopeLastWeek(Builder $query): Builder
-    {
-        return $query->whereBetween('posted_at', [carbon('1 week ago'), now()])
-                     ->latest();
-    }
-    /**
-     * Scope a query to order comments by latest posted.
-     */
-    public function scopeLatest(Builder $query): Builder
-    {
-        return $query->orderBy('posted_at', 'desc');
-    }
-    /**
-     * Return the comment's author
-     */
-    public function author(): BelongsTo
-    {
-        return $this->belongsTo(User::class, 'author_id');
-    }
-    /**
-     * Return the comment's post
-     */
-    public function post(): BelongsTo
-    {
-        return $this->belongsTo(Post::class);
-    }
+
 }

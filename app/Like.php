@@ -14,22 +14,7 @@ class Like extends Model
      * @var array
      */
     protected $fillable = [
-        'likeable_id',
-        'likeable_type',
-        'author_id',
+
     ];
-    /**
-     * Get all of the owning likeable models.
-     */
-    public function likeable(): MorphTo
-    {
-        return $this->morphTo();
-    }
-    /**
-     * Return the like's author
-     */
-    public function author(): BelongsTo
-    {
-        return $this->belongsTo(User::class, 'author_id');
-    }
+
 }

@@ -62,20 +62,20 @@
         </div>
 
             <h1>Hello World!</h1>
-            <div id="typed" class="strings">
+            {{-- <div id="typed" class="strings">
                 <p>Welcome to<strong> Ask Rachel Belle</strong> Got a</p>
                 <p>question<em> that</em><p>needs answers?</p>
             </div>
-            <span id="typed"> </span>
+            <span id="typed"> </span> --}}
 
         <div class="container welcome-intro">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <p>Here is how it works, sign up and register, ask a question and you should get a response asap.
                     Got something on your mind? Whether your at home on your computer, or traveling with your moblie device feel free and say Hi!</p>
                 </div>
-                <div class="col-sm-8">
-                    <img  src="./images/testimonial.jpg">
+                <div class="col-sm-6 testimonial">
+                    <img class="testimonial" src="./images/testimonial.jpg">
                 </div>
             </div>
             <div class="row">
@@ -112,7 +112,7 @@
             </div>
             <div class="row">
               <div class="col-25">
-                <label for="country">Email</label>
+                <label for="country">County</label>
               </div>
               <div class="col-75">
                 <select id="country" name="country">
@@ -159,14 +159,13 @@
         </div> --}}
         {{-- @include('partials.footer') --}}
 
-
-        <script type="text/javascript" src="js/typed.js"></script>
-       <script type="text/javascript" src="{{url::asset('js/coolstuff.js') }}" ></script>
-       {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> --}}
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        {{-- <script type="text/javascript" src="js/typed.js"></script> --}}
+        {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> --}}
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+       {{-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script> --}}
        <script>
                    var slideIndex = 0;
                    showSlides();
@@ -188,10 +187,10 @@
                      setTimeout(showSlides, 3000); // Change image every 2 seconds
                    }
        </script>
-       <script>
+       {{-- <script>
              var typed = new Typed('#typed', {
                stringsElement: '#typed-strings'
              });
-       </script>
+       </script> --}}
    </body>
 </html>
